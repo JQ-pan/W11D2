@@ -101,10 +101,12 @@ function Clock() {
   const timezone = time.toTimeString().replace(/[^A-Z]/g, "").slice(3);
 
   useEffect(() => {
+    
     const tick = () => {
       setTime(new Date());
     }
     const interval = setInterval(tick, 1000);
+
     return () => {
       clearInterval(interval)
       console.log('Time has unmounted')
