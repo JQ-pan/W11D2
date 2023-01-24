@@ -1,6 +1,7 @@
 import React from 'react';
 
 export class ClockToggle extends React.Component {
+  
   render () {
     return (
       <button 
